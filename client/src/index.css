@@ -1,0 +1,108 @@
+/* --- THEME: WHITE CARDS ON DARK BACKGROUND --- */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Keep the cool Dark Blue Gradient for the whole page */
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  background-attachment: fixed;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* --- CARD STYLE (Changed to WHITE) --- */
+.card {
+  background-color: #ffffff !important; /* White Card */
+  border: none !important;
+  border-radius: 12px; /* Rounded corners */
+  
+  /* Nice soft shadow so it pops off the dark page */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  
+  /* Animation setup */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT (Lift up) */
+.card:hover {
+  transform: translateY(-10px); /* Floats up */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5) !important;
+  cursor: pointer;
+}
+
+/* --- TEXT VISIBILITY (Dark text on White Card) --- */
+
+/* 1. Product Titles (e.g. "Lakers Icon Edition") */
+.card-title {
+  color: #2c3e50 !important; /* Dark Blue-Grey */
+  font-weight: 800; /* Extra Bold */
+}
+
+/* 2. Team Names (e.g. "Man City", "Lakers") */
+.text-muted {
+  color: #7f8c8d !important; /* Visible Grey */
+  font-weight: 500;
+}
+
+/* 3. Price (Keep it Gold/Orange to stand out) */
+.text-primary, .text-warning {
+  color: #d35400 !important; /* Burnt Orange/Gold */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* --- DROPDOWNS (Clean Light Style) --- */
+/* --- DROPDOWNS (Fixing Visibility) --- */
+.form-select {
+  background-color: #e3f2fd !important; /* Light Blue Background */
+  color: #000000 !important;             /* PURE BLACK TEXT (High Contrast) */
+  border: 1px solid #90caf9 !important;
+  border-radius: 6px;
+  font-weight: 700; /* Make numbers BOLD */
+  font-size: 1rem;  /* Make numbers slightly larger */
+}
+
+.form-select option {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.form-select:focus {
+  background-color: #ffffff !important; /* Turns white when you click it */
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3);
+}
+
+/* --- BUTTONS --- */
+.btn-primary {
+  background-color: #0984e3; /* Bright Blue */
+  color: white !important;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #74b9ff;
+}
+
+/* Headings on the page (like "Featured Jerseys") need to stay White */
+h2 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+/* Optional: Make the scrollbar inside the review box look nicer */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
